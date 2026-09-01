@@ -41,7 +41,7 @@ Commit:
 ## V1.2.2 — Speaking Feedback Calibration
 
 Status:
-Release Candidate — tested locally, pending production deployment
+Stable
 
 Main Changes:
 - Active Speaking Duration
@@ -58,4 +58,4 @@ Snapshot:
 versions/v1.2.2-feedback-calibration.html
 
 Commit:
-PENDING_FEATURE_COMMIT
+15f9dcb49718c8f4371d262315acdff5b85178fd
