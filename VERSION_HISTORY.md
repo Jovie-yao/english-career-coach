@@ -35,8 +35,5 @@ Main Changes:
 Snapshot:
 versions/v1.2.1-speaking-feedback.html
 
-Feature Commit:
-PENDING_FEATURE_COMMIT
-
-Note:
-The feature commit records the tested production code and immutable snapshots. A documentation-only follow-up commit replaces the pending value above with that real SHA.
+Commit:
+786df01223c876c38a1e2af8e1b42c3f3bf483cf
