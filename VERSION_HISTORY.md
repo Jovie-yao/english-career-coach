@@ -41,7 +41,20 @@ Commit:
 ## V1.2.2 — Speaking Feedback Calibration
 
 Status:
-Stable
+Stable — User Accepted / Frozen
+
+User Acceptance:
+Passed
+
+Frozen:
+2026-09-02
+
+Acceptance Notes:
+- Listen & Shadow completed real user experience verification.
+- Speaking Feedback meets the requirements for the current phase.
+- This version is the official stable recovery point for Phase 1.2.
+- Future development must not overwrite the V1.2.2 snapshot.
+- New features must continue under a new version number.
 
 Main Changes:
 - Active Speaking Duration
@@ -59,3 +72,31 @@ versions/v1.2.2-feedback-calibration.html
 
 Commit:
 15f9dcb49718c8f4371d262315acdff5b85178fd
+
+## Phase Status
+
+Phase 1.2:
+Completed
+
+Final Stable Version for Phase 1.2:
+V1.2.2 — Speaking Feedback Calibration
+
+Stable Snapshot:
+versions/v1.2.2-feedback-calibration.html
+
+Production Base Commit:
+58db04951845c35824b28b3a730115cd803772a2
+
+## Recovery Rule
+
+If a future version fails or needs to be restored, recover this version first:
+
+V1.2.2 — Speaking Feedback Calibration
+
+Snapshot:
+versions/v1.2.2-feedback-calibration.html
+
+Production Base Commit:
+58db04951845c35824b28b3a730115cd803772a2
+
+Do not modify this historical snapshot.
