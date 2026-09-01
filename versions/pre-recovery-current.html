@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Career Coach</title>
+  <style>
+    body{margin:0;background:#f7f8fc;color:#172033;font:16px/1.5 system-ui,sans-serif}.wrap{max-width:1000px;margin:auto;padding:28px 18px}.brand{color:#4056d6;font-size:22px;font-weight:800}.card{margin-top:22px;background:#fff;border:1px solid #e5e8f0;border-radius:16px;padding:20px}.vocabulary-card{display:block;margin:12px 0;border:1px solid #e5e8f0;border-radius:12px;background:#fcfcff}.vocabulary-card summary{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px;cursor:pointer}.vocabulary-card summary strong{font-size:20px;color:#4056d6}.vocabulary-card section{padding:0 14px 14px;border-top:1px solid #e5e8f0}.vocabulary-card h4{margin:14px 0 5px;color:#4056d6}.vocabulary-card p{margin:7px 0}.status{color:#667085}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">English Career Coach</div>
+    <section class="card">
+      <p class="status">Phase 1.2A · Vocabulary</p>
+      <h1>Vocabulary Library</h1>
+      <p>先看单词、词性、优先级和英美发音；点击卡片展开学习内容。</p>
+      <div id="vocabulary"></div>
+    </section>
+  </main>
+  <script type="module">
+    import { phase12Vocabulary, vocabularyCard, speakWithAccent } from './phase12-vocabulary-runtime.js';
+    const mastery = JSON.parse(localStorage.getItem('eccMastery') || '{}');
+    const target = document.querySelector('#vocabulary');
+    target.innerHTML = phase12Vocabulary.map((entry) => vocabularyCard(entry, mastery[entry.word] || 'New')).join('');
+    target.querySelectorAll('.vocabulary-card').forEach((card) => {
+      const word = card.dataset.word;
+      const controls = document.createElement('p');
+      controls.innerHTML = '<button type="button">🇺🇸 Play US pronunciation</button> <button type="button">🇬🇧 Play UK pronunciation</button>';
+      controls.querySelectorAll('button')[0].onclick = () => speakWithAccent(word, 'US');
+      controls.querySelectorAll('button')[1].onclick = () => speakWithAccent(word, 'UK');
+      card.querySelector('section').prepend(controls);
+    });
+  </script>
+</body>
+</html>
+
+
