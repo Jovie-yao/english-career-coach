@@ -100,3 +100,36 @@ Production Base Commit:
 58db04951845c35824b28b3a730115cd803772a2
 
 Do not modify this historical snapshot.
+
+## V1.3.0 — Daily Session Foundation
+
+Status: Stable
+
+Phase:
+Phase 1.3 — Daily Learning System
+
+Main Changes:
+- Today entry with Not Started, In Progress, and Completed states
+- Standard Daily Plan and weighted session progress
+- Guided Review, Learn, Shadow, Speak, and Wrap-up session
+- Review Foundation with Got it / Needs Practice (no scheduling engine)
+- Existing Vocabulary and Expressions integrated into Day 1 data
+- V1.2.2 calibrated Shadowing logic reused in the daily context
+- 90-second free-speaking challenge, verified transcript fallback, and self review
+- Real-time versioned localStorage persistence, Save & Exit, and precise resume
+- Day Complete state and reusable Day 1 content architecture
+
+Snapshot:
+versions/v1.3.0-daily-session-foundation.html
+
+Not Included Yet:
+- Review Engine
+- Mastery System
+- Active Vocabulary
+- Adaptive Load
+- Quick / Focus modes
+- Full Progress system
+
+Test Notes:
+- Critical Day 1 flow, refresh/resume, 390px layout, independent library regression, recording/playback, and unavailable-transcript fallback passed locally.
+- Real human SpeechRecognition scoring was not completed in the execution environment.
