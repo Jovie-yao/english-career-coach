@@ -37,3 +37,25 @@ versions/v1.2.1-speaking-feedback.html
 
 Commit:
 786df01223c876c38a1e2af8e1b42c3f3bf483cf
+
+## V1.2.2 — Speaking Feedback Calibration
+
+Status:
+Release Candidate — tested locally, pending production deployment
+
+Main Changes:
+- Active Speaking Duration
+- Pace calibration
+- Fluency calibration
+- Content-word weighting
+- Function-word weighting
+- Recognition uncertainty handling
+- Improved feedback priority
+- Next Attempt coaching
+- Collapsed scoring explanation
+
+Snapshot:
+versions/v1.2.2-feedback-calibration.html
+
+Commit:
+PENDING_FEATURE_COMMIT
