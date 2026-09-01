@@ -51,8 +51,8 @@
     </section>
   </main>
   <script type="module">
-    import { phase12Vocabulary, vocabularyCard, bindVocabulary } from "./phase12-vocabulary-runtime.js";
-    import { evaluateShadowing } from "./shadow-feedback.js";
+    import { phase12Vocabulary, vocabularyCard, bindVocabulary } from "../phase12-vocabulary-runtime.js";
+    import { evaluateShadowing } from "../shadow-feedback.js";
     const $ = (selector, root = document) => root.querySelector(selector);
     const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
     const mastery = JSON.parse(localStorage.getItem("eccMastery") || "{}");
@@ -143,3 +143,4 @@
   </script>
 </body>
 </html>
+
